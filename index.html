@@ -5,9 +5,9 @@
     <title>Local Weather App- Florencia De Vuono - FreeCodeCamp Project- </title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
   </head>
-  <body>
+  <body onload="getGeolocation()">
 
-    <div>
+    <div id="message">
       <p id="currentTemp"></p>
       <p id="paragraph"><span id="currentWeather"></span> in <span id="currentLocation"></span></p>
       <p>min<span id="high-low"></span>max</p>
