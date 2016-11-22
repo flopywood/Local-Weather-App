@@ -38,7 +38,7 @@ function getGeolocation() {
           $('#currentTemp').prepend('<img src=' + iconSrc + '>'); */
 }
 
-      $.getJSON(crossorigin + url + lat + "&lon=" + lon + "&APPID=" + API_KEY, function(apiData) {
+      $.getJSON(/*crossorigin +*/ url + lat + "&lon=" + lon + "&APPID=" + API_KEY, function(apiData) {
           wd = apiData;
           render(apiData, cel);
                $('#toggle').click(function() {
