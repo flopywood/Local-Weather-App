@@ -25,15 +25,13 @@ function render(wd, cel) {
 
     /*var iconSrc = "http://openweathermap.org/img/w/" + icon + ".png";
     $('#currentTemp').prepend('<img src=' + iconSrc + '>'); */
-
-
 }
 
 $(function() {
 
     var loc;
 
-    $.getJSON('http://ipinfo.io', function(d) {
+    $.getJSON('https://crossorigin.me/http://ipinfo.io', function(d) {
         console.log("assigning the data...");
         loc = d.loc.split(",");
         console.log(loc);
@@ -49,9 +47,6 @@ $(function() {
                     cel = !cel;
                     render(wd, cel);
                 })
-
             });
-
     });
-
 });
