@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body {
+  background: #1A1A1B;
+  font-family: 'Roboto', sans-serif;
+  color: #ff6363;;
+  text-align: center;
+}
+
+#currentTemp {
+  font-size: 20em;
+  margin-top: -25px;
+}
+
+#paragraph {
+  margin-top: -200px;
+}
+
+#toggle {
+  cursor: pointer;
+  color: #ffd43b;
+}
